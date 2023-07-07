@@ -1,0 +1,29 @@
+.lineas-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.lineas-container span {
+    font-weight: bold
+}
+
+div[id^=linea]{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    div[id^=linea]{
+        justify-content: center;
+    }
+    
+    .lineas-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px
+    }
+}

@@ -1,0 +1,58 @@
+.caracteristicas-conatiner{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-conatiner {
+    width: 35%;
+    float: left;
+    margin-right: 3em;
+}
+
+
+.image-conatiner > img {
+    width: 100%;
+    height: fit-content;
+}
+
+.caracteristicas-conatiner{
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+
+#info {
+    color: #291507;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-conatiner  {
+        width: 100%;
+        padding-top: 0;
+        float: none;
+    }
+
+    .caracteristicas-conatiner{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

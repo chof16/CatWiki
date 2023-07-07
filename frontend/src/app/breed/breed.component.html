@@ -1,3 +1,23 @@
 <ng-template [ngIf]="breed">
-    <div>{{breed.name}}</div>
+    <div class="container">
+        <ng-template [ngIf]="breed">
+            <div class="image-conatiner">
+                <img src={{first_image?.url}}>
+            </div>
+        </ng-template>
+        <div class="caracteristicas-conatiner">
+            <p id="info">{{breed.name}}</p>
+            <p>{{breed.description}}<br><br></p>
+            <p><span style="font-weight: bold">Temperament: </span>:{{breed.temperament}}</p>
+            <p><span style="font-weight: bold">Origin: </span>{{breed.origin}}</p>
+            <app-line-chart [coloredLines]="breed.adaptability" [etiqueta]="'Adaptability'"></app-line-chart>
+            <app-line-chart [coloredLines]="breed.affection_level" [etiqueta]="'Affection Level'"></app-line-chart>
+            <app-line-chart [coloredLines]="breed.child_friendly" [etiqueta]="'Child Friendly'"></app-line-chart>
+            <app-line-chart [coloredLines]="breed.grooming" [etiqueta]="'Grooming'"></app-line-chart>
+            <app-line-chart [coloredLines]="breed.intelligence" [etiqueta]="'Intelligence'"></app-line-chart>
+            <app-line-chart [coloredLines]="breed.health_issues" [etiqueta]="'Health Issues'"></app-line-chart>
+            <app-line-chart [coloredLines]="breed.social_needs" [etiqueta]="'Social Needs'"></app-line-chart>
+            <app-line-chart [coloredLines]="breed.stranger_friendly" [etiqueta]="'Stranger Friendly'"></app-line-chart>
+        </div>
+    </div>
 </ng-template>

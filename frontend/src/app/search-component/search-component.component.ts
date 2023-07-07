@@ -1,7 +1,6 @@
 import { Component, Input, inject } from '@angular/core';
 import { BreedsService } from '../breeds.service';
 import { Breed } from '../breeds';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FormControl } from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
@@ -17,7 +16,6 @@ import { Router } from '@angular/router';
 export class SearchComponentComponent {
   breedName = new FormControl('');
   filteredOptions: Observable<Breed[]> | undefined;
-  faSearch = faSearch
   @Input() breeds!: Breed[];
 
 

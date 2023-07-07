@@ -14,6 +14,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from "@angular/material/input"
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgOptimizedImage } from '@angular/common';
+import { LineChartComponent } from './line-chart/line-chart.component'
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     SearchComponentComponent,
     BreedComponent,
     HomeComponent,
+    LineChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
