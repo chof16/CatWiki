@@ -1,0 +1,40 @@
+.searchBox {
+    padding-bottom: 1.5em;
+}
+
+.input-breed {
+    border-radius: 59px;
+    width: 15rem;
+    height: 3rem;
+    padding-left: 14px;
+    border: 1px solid #ccc;
+}
+
+.searchIcon {
+    margin-left: -50px;
+    position: relative;
+    z-index: 2;
+    color: black;
+}
+
+.mat-form-field-outline-start, .mat-form-field-outline-end {
+    border-radius: 0 !important;
+}
+
+
+@media (max-width:425px) {
+    .example-full-width {
+        width: 80%;
+    }
+
+}
+
+
+@media (max-width:650px) {
+    .input-breed {
+        max-width: 110px;
+    }
+
+
+
+}
