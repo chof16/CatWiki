@@ -1,3 +1,41 @@
 .wrapper {
     margin: 0 3.5rem;
 }
+
+footer {
+    background-color: black;
+    color: white;
+    border-radius: 25px 25px 0 0;
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    height: 12vh;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+#logo-blanco {
+    grid-column: 1/1;
+    margin-top: 10px;
+    filter: brightness(0) invert(1);
+    width: 10.5rem;
+    margin-left: 10px;
+}
+
+.copy {
+    grid-column: 2/2;
+    padding-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    #logo-blanco {
+        width: 100%;
+    }
+
+}

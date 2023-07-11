@@ -19,5 +19,16 @@
             <app-line-chart [coloredLines]="breed.social_needs" [etiqueta]="'Social Needs'"></app-line-chart>
             <app-line-chart [coloredLines]="breed.stranger_friendly" [etiqueta]="'Stranger Friendly'"></app-line-chart>
         </div>
+
+        <div class="imagenes">
+            <div *ngFor="let image of images; let i = index">
+                <ng-template [ngIf]="i!=0">
+                    <div class="imagen-container">
+                        <img [src]="image.url">
+                    </div>
+                </ng-template>
+            </div>
+    
+        </div>
     </div>
 </ng-template>

@@ -28,13 +28,6 @@
     padding-bottom: 1.5em;
 }
 
-.searchIcon {
-    margin-left: -30px;
-    position: relative;
-    z-index: 2;
-    color: black;
-}
-
 #input-breed {
     border-radius: 59px;
     width: 15rem;
@@ -183,6 +176,10 @@ img.image-one {
         flex-direction: column;
     }
 
+    .informacion{
+        margin-bottom: 1.5em;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -195,10 +192,6 @@ img.image-one {
 @media (max-width:650px) {
     #input-breed {
         max-width: 110px;
-    }
-
-    .searchIcon {
-        visibility: hidden;
     }
 
 }

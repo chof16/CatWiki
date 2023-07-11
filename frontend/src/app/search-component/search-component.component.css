@@ -10,12 +10,6 @@
     border: 1px solid #ccc;
 }
 
-.searchIcon {
-    margin-left: -50px;
-    position: relative;
-    z-index: 2;
-    color: black;
-}
 
 .mat-form-field-outline-start, .mat-form-field-outline-end {
     border-radius: 0 !important;
