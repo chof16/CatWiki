@@ -15,7 +15,8 @@ import {MatInputModule} from "@angular/material/input"
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgOptimizedImage } from '@angular/common';
-import { LineChartComponent } from './line-chart/line-chart.component'
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { Top10breedsComponent } from './top10breeds/top10breeds.component'
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { LineChartComponent } from './line-chart/line-chart.component'
     BreedComponent,
     HomeComponent,
     LineChartComponent,
+    Top10breedsComponent,
   ],
   imports: [
     BrowserModule,

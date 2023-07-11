@@ -30,12 +30,21 @@ footer {
     padding-top: 20px;
     text-align: center;
     justify-content: center;
+    font-size: 1.15em;
 }
 
 @media screen and (max-width: 768px) {
 
     #logo-blanco {
         width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .copy {
+        font-size: small;
     }
 
 }

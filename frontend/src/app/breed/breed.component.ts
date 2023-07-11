@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { BreedsService } from '../breeds.service';
 import { Breed } from '../breeds';
 import { ActivatedRoute, ParamMap } from '@angular/router';
@@ -12,9 +12,10 @@ import { Image } from '../imagen';
 export class BreedComponent implements OnInit{
   breed!: Breed;
   first_image: Image | undefined;
-  images:Image[]=[]
+  images:Image[]=[];
 
   constructor(private route: ActivatedRoute,private breedService:BreedsService) {
+
   }
 
   ngOnInit():void {
@@ -26,6 +27,7 @@ export class BreedComponent implements OnInit{
       this.images=images
       this.first_image=this.images[0]
     })
+
   }
 
 }

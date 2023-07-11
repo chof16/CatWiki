@@ -1,0 +1,14 @@
+<h1 >Top 10 most searched breeds</h1>
+
+<div *ngFor="let breed of breedsList; let i =index">
+    <div class="breed-information">
+        <div class="imagen-container">
+            <img [src]="breed.image.url">
+        </div>
+        <div class="texto-informativo">
+            <h2 class="cabecera">{{i+1}}. {{breed.name}}</h2>
+            <p>{{breed.description}}</p>
+        </div>
+    </div>
+
+</div>

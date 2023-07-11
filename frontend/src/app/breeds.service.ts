@@ -20,6 +20,10 @@ export class BreedsService {
     return this.http.get<Breed[]>(this.url_breeds)
   }
 
+  get10Breeds(): Observable<Breed[]> {
+    return this.http.get<Breed[]>(this.url_breeds+"/top/10")
+  }
+
   getBreed(id: string): Observable<Breed> {
     return this.http.get<Breed>(this.url_breeds + "/" + id)
   }

@@ -13,11 +13,9 @@ export class HomeComponent implements OnInit {
 
   catsListSlice: Cat[] = []
   breedsList: Breed[] = []
+  top10:Breed[]=[]
 
-
-  constructor( private breedService: BreedsService, private catsService: CatsService ) {
-
-  }
+  constructor( private breedService: BreedsService, private catsService: CatsService ) {  }
 
   ngOnInit(): void {
     this.getCats();
