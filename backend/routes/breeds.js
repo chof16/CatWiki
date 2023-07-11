@@ -25,4 +25,11 @@ router.get('/:id', async function (req, res, next) {
     res.send(json)
 });
 
+router.get('/top/10', async function (req, res, next) {
+    api = await axios.get(url+"?limit=10", config)
+    json = api.data;
+    console.log(json)
+    res.send(json)
+});
+
 module.exports = router;
