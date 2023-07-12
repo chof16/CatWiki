@@ -6,7 +6,7 @@ import { Cat } from './cats';
 })
 
 export class CatsService {
-  url = 'http://localhost:3000/api/cats';
+  url = 'https://cat-wiki-mqov.onrender.com/api/cats';
 
 
   async getAllCats(): Promise<Cat[]> {
