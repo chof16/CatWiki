@@ -37,8 +37,6 @@
 
 .caracteristicas-conatiner{
     width: 55%;
-    margin-left: auto;
-    margin-right: auto;
     float: left;
 }
 
@@ -49,6 +47,9 @@
     gap: 4em;
     padding-top: 2em;
     justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 4em;
 }
 
 
@@ -81,8 +82,6 @@
 
     .caracteristicas-conatiner{
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
         float: none;
         display: flex;
         flex-direction: column;
@@ -91,6 +90,8 @@
 
     .imagenes {
         flex-direction: column;
+        margin-right: 40px;
+        margin-left: 0;
     }
 
 }
