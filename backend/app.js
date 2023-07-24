@@ -2,7 +2,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 const cors = require('cors');
-const functions = require("firebase-functions")
 
 var catsRouter = require('./routes/cats');
 var breedsRouter= require('./routes/breeds')
@@ -24,4 +23,4 @@ app.use('/api/images', iamgesRouter);
 
 app.listen(port)
 
-exports.api=functions.https.onRequest(app)
+module.exports=app
