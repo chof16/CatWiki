@@ -9,8 +9,8 @@ import { Image } from './imagen';
 })
 export class BreedsService {
 
-  url_breeds = 'https://cat-wiki-mqov.onrender.com/api/breeds';
-  url_images='https://cat-wiki-mqov.onrender.com/api/images';
+  url_breeds = 'https://catwiki-81868.web.app/api/breeds';
+  url_images='https://catwiki-81868.web.app/api/images';
 
   constructor(
     private http: HttpClient) { }

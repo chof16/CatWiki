@@ -2,12 +2,15 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 const cors = require('cors');
+const functions = require("firebase-functions")
+
 var catsRouter = require('./routes/cats');
 var breedsRouter= require('./routes/breeds')
 var iamgesRouter= require('./routes/images')
 
 var app = express();
 
+const port =3000
 
 app.use(cors());
 app.use(express.json());
@@ -19,4 +22,6 @@ app.use('/api/cats', catsRouter);
 app.use('/api/breeds', breedsRouter);
 app.use('/api/images', iamgesRouter);
 
-module.exports = app;
+app.listen(port)
+
+exports.api=functions.https.onRequest(app)
