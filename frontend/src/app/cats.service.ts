@@ -6,7 +6,7 @@ import { Cat } from './cats';
 })
 
 export class CatsService {
-  url = 'https://cat-wiki-green.vercel.app/api/cats';
+  url = 'https://cat-wiki-mqov.onrender.com/api/cats';
 
 
   async getAllCats(): Promise<Cat[]> {

@@ -1,13 +1,13 @@
 {
   "name": "catswiki",
   "version": "0.0.0",
-  "main": "./app.js",
   "engines": {
-    "node": "18.x"
+
+    "node":"18.x"
   },
   "scripts": {
-    "start": "node ./app",
-    "watch": "nodemon ./app"
+    "start": "node ./bin/www",
+    "watch": "nodemon -e js ./bin/www"
   },
   "dependencies": {
     "axios": "^1.4.0",
